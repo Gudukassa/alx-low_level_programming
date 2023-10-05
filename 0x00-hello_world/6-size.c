@@ -16,5 +16,5 @@ ptintf("Size of a int: %lu byte(s)\n", (unsigned long)sizeof(b));
 ptintf("Size of a long int: %lu bytes(s)\n", (unsigned long)sizeof(c));
 ptintf("Size of a long long int: %lu bytes(s)\n", (unsigned long)sizeof(d));
 ptintf("Size of a float: %lu bytes(s)\n", (unsigned long)sizeof(f));
-return (o);
+return (0);
 }
