@@ -5,7 +5,7 @@
  * _atoi - converts a string to an integer
  * @s: string to be converted
  *
- * Return: the int converted from string
+ * Return: the int converted from the string
  */
 
 int _atoi(char *s)
@@ -23,7 +23,7 @@ int _atoi(char *s)
 		len++;
 	while (i < len && f == 0)
 	{
-		if (s[i] ==  '-')
+		if (s[i] == '-')
 			++d;
 
 		if (s[i] >= '0' && s[i] <= '9')
@@ -44,13 +44,15 @@ int _atoi(char *s)
 		return (0);
 	return (n);
 }
+
 /**
  * main - multiplies two numbers
- * @arfc: number of arguments
- * @argv: array of argumrents
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
- * Return: 0 (Suuccess), 1 (Error)
+ * Return: 0 (Success), 1 (Error)
  */
+
 int main(int argc, char *argv[])
 {
 	int result, num1, num2;
@@ -59,6 +61,7 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		return (1);
+
 	}
 
 	num1 = _atoi(argv[1]);
